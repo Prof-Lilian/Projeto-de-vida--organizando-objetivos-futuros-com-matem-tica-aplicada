@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo:#6D61FE;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #F9AA4E;
+    --botao-inativo: #D74727;
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+
+body {
+    background-color:#6D61FE;
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #2ECEC5;
+    color:#0500FF;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid #12B97D;
+    border-left: 2px solid #12B97D;
+    border-right: 2px solid #12B97D;
+    border-top: none;
+}
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+    display: block;
+}
+
+.botao.ativo{
+    background-color:rgba(110, 233, 233, 1);
+    border-bottom: 4px solid #2674AC;
+}
+
+.abas-textos{
+    background-color: #14EDD3;
+    color: #0919AD;
+    border-bottom: 4px solid #12B97D;
+    border-left: 2px solid #12B97D;
+    border-right: 2px solid #12B97D;
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+    background-color: #14EDD3;
+}
+
+.aba-conteudo{
+    display: none;
+    background-color: #14EDD3;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: #2B3AC6;
+    text-transform: uppercase;
+}
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #2B09F8;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto{
+    color: #2B09F8;
+    font-size: 20px;
+    margin: 0;
+
+}
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
